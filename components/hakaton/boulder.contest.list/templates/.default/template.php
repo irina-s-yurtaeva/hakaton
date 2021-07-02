@@ -24,5 +24,6 @@ foreach ($arResult['ITEMS'] as $item)
 }
 ?></ul>
 
+<p><a href="?page=apply">Apply!</a></p>
 <p><a href="?page=card">Go to the card</a></p>
 <p><a href="?page=result">Go to results</a></p>
