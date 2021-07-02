@@ -25,8 +25,32 @@ Class Hakaton  extends \CModule {
 		$this->MODULE_DESCRIPTION = "(Festival bouldering competition)";
 	}
 
+	function InstallFiles()
+	{
+		CopyDirFiles(__DIR__.'/public', $_SERVER["DOCUMENT_ROOT"], true, true);
+	}
+
+	function installDB()
+	{
+		global $DB;
+		if (!$DB->Query("SELECT 'x' FROM b_rock_boulder_contest", true))
+		{
+			$this->errors = $DB->RunSQLBatch(__DIR__."/install.sql");
+
+			if($this->errors !== false)
+			{
+				$GLOBALS["APPLICATION"]->ThrowException(implode("", $this->errors));
+				return false;
+			}
+		}
+		return true;
+	}
+
 	function DoInstall()
 	{
+		$this->InstallDB();
+		$this->InstallFiles();
+
 		RegisterModule("hakaton");
 	}
 
