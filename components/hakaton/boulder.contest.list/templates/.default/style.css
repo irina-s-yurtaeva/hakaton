@@ -134,4 +134,60 @@ main {
 
 .table-row-block {
 	flex-direction: column;
+	position: relative;
+}
+
+.btn-add-competitions {
+	margin-bottom: 25px;
+	background: #339e09;
+	border: 1px solid #339e09;
+	color: #fff;
+}
+
+.btn-add-competitions:hover {
+	background: transparent;
+	color: #339e09;
+}
+
+.table-row-block .delete {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(45deg);
+	transition: .4s;
+	opacity: 1;
+}
+
+.table-row-block .delete:hover {
+	opacity: 0.6;
+}
+
+
+.table-row-block .delete::after,
+.table-row-block .delete::before {
+	content: '';
+	display: block;
+	/*width: 90%;*/
+	/*height: 90%;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #444;
+}
+
+.table-row-block .delete::after {
+	width: 50%;
+	height: 1px;
+}
+
+.table-row-block .delete::before {
+	width: 1px;
+	height: 50%;
 }
