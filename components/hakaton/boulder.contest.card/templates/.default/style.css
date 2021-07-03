@@ -38,7 +38,7 @@ body.girls {
 .title {
 	font-size: 22px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 	text-shadow: 0px 0px 5px #fff;
 }
@@ -47,12 +47,12 @@ body.girls {
 	font-size: 12px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .select-block {
 	margin-bottom: 30px;
 }
-
 
 .select-css {
 	display: block;

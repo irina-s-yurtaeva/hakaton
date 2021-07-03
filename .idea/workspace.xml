@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9c3caa5-2d46-4638-b5f9-e2d5d5538752" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/boys.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/girls.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/all.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hakaton.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/local.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/all.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default" />
       <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default" />
       <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default" />
     </key>
@@ -74,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625294606744</updated>
-      <workItem from="1625294611581" duration="12093000" />
+      <workItem from="1625294611581" duration="15344000" />
     </task>
     <servers />
   </component>

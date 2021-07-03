@@ -15,27 +15,27 @@ $item = $arResult['ITEM'];
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Create or edit contest</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?=$templateFolder?>/style.css">
 </head>
 <body>
+<main>
 
-<h1 class="title">Create or edit contest</h1>
+<h1 class="title">Новое соревнование</h1>
 <form method="post" action="<?=POST_FORM_ACTION_URI?>">
 	<?=bitrix_sessid_post()?>
 	<input type="hidden" name="ID" value="<?=htmlspecialcharsbx($item['ID'])?>">
 	<h2><input type="text" name="NAME" value="<?=htmlspecialcharsbx($item['NAME'])?>" placeholder="New contest"></h2>
-	<h3>Date</h3>
+	<h3 class="subtitle">Дата соревнования</h3>
 	<div><input type="date" name="DATE" value="<?=htmlspecialcharsbx($item['DATE'])?>"></div>
-	<h3>Time</h3>
-	<div>
-		<input type="time" name="START" value="<?=htmlspecialcharsbx($item['START'])?>"> -
+	<h3 class="subtitle">Время сета</h3>
+	<div class="flex block-time">
+		<input type="time" name="START" value="<?=htmlspecialcharsbx($item['START'])?>"> —
 		<input type="time" name="FINISH" value="<?=htmlspecialcharsbx($item['FINISH'])?>">
 	</div>
-	<h3>Tracks</h3>
+	<h3  class="subtitle">Список трасс</h3>
 	<ol>
 		<?php
 		foreach ($arResult['TRACKS'] as $track)
@@ -60,10 +60,12 @@ $item = $arResult['ITEM'];
 		</li>
 	</ol>
 
-	<p><input type="button" name="" value="ADD" /></p>
+<!--	<p><input class="btn btn-add" type="button" name="" value="ADD" /></p>-->
+	<div class="attempt"><span>+ добавить еще</span></div>
 
-	<p><input type="submit" name="" value="SAVE" /></p>
+	<p><input class="btn btn-save" type="submit" name="" value="Создать" /></p>
 </form>
+</main>
 </body>
 </html>
 

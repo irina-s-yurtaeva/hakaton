@@ -17,8 +17,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?=$templateFolder?>/style.css">
 </head>
-<body class="girls ">
-<!--<body class="boys ">-->
+<!--<body class="girls ">-->
+<body class="boys ">
 <main>
 	<h1 class="title">Соревнования <span>03.09.2021</span></h1>
 
