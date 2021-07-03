@@ -12,7 +12,8 @@ create table b_rock_boulder_track (
 	NUMBER int(10) not null,
 	TITLE varchar(255),
 	CONTEST_ID int(10),
-	primary key (ID)
+	primary key (ID),
+	index IX_BOULDER_TRACK_CONTEST_ID(CONTEST_ID)
 );
 
 create table b_rock_boulder_card (
