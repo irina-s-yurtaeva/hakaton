@@ -9,9 +9,9 @@ create table b_rock_boulder_contest (
 
 create table b_rock_boulder_track (
 	ID int(10) not null auto_increment,
-	NUMBER int(10) not null,
+	NUMBER int(10) not null default 100,
 	TITLE varchar(255),
-	CONTEST_ID int(10),
+	CONTEST_ID int(10) not null,
 	primary key (ID),
 	index IX_BOULDER_TRACK_CONTEST_ID(CONTEST_ID)
 );

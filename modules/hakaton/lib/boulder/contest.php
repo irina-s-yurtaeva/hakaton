@@ -38,3 +38,60 @@ class ContestTable extends \Bitrix\Main\Entity\DataManager
 	}
 }
 
+class Contest
+{
+	protected $id;
+	protected $data = [];
+
+	public function __construct($id)
+	{
+		$this->id = (int) $id;
+	}
+
+	public function save($data)
+	{
+		return ContestTable::update($this->id, $data);
+	}
+
+	public function create($data)
+	{
+		return ContestTable::add($data);
+	}
+
+	public function saveTracks(array $tracks)
+	{
+		foreach ($tracks as $id => $track)
+		{
+			TrackTable::update($id, $track);
+		}
+		return new Main\Result();
+	}
+
+	public function addTracks(array $tracks)
+	{
+		$result = [];
+		foreach ($tracks as $trackName)
+		{
+			$res = TrackTable::add([
+				'CONTEST_ID' => $this->id,
+				'TITLE' => $trackName,
+			]);
+			if ($res->isSuccess())
+			{
+				$result[$res->getId()] = $trackName;
+			}
+		}
+		$res = new Main\Result();
+		$res->setData($result);
+		return $res;
+	}
+
+
+	public static function getById($id)
+	{
+		return new Contest($id);
+	}
+
+
+}
+

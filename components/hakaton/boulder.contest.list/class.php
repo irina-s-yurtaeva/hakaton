@@ -25,7 +25,7 @@ final class BoulderContestListComponent extends CBitrixComponent
 		$date->add('1D');
 		$this->arResult['ITEMS'] = Boulder\ContestTable::getList([
 			'select' => ['*'],
-			'filter' => ['ACTIVE' => 'Y', '>=START_DATE' => $date],
+			'filter' => ['ACTIVE' => 'Y'/*, '>=START_DATE' => $date*/],
 			'order' => ['START_DATE' => 'DESC'],
 			'limit'  => 100
 		])->fetchAll();
