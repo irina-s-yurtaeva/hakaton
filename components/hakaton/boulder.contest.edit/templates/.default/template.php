@@ -12,7 +12,7 @@ if (empty($item))
 {
 	$item['START_DATE'] = new Main\Type\DateTime();
 	$item['FINISH_DATE'] = new Main\Type\DateTime();
-	$item['FINISH_DATE']->add('2H');
+	$item['FINISH_DATE']->add('2hour');
 }
 $start = new Main\Type\Date($item['START_DATE']);
 $startSet = $item['START_DATE']->format('H:i');

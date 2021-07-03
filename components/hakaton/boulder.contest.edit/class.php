@@ -117,8 +117,6 @@ final class BoulderContestEditComponent extends CBitrixComponent implements Main
 		}
 		if ($result->isSuccess() && $this->request->getPost('TRACK'))
 		{
-			?><pre><b>$this->request->getPost('TRACK'): </b><?print_r($this->request->getPost('TRACK'))?></pre><?
-
 			$result = $item->saveTracks($this->request->getPost('TRACK'));
 		}
 		if ($result->isSuccess() && $this->request->getPost('TRACK_NEW'))

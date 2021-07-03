@@ -16,13 +16,13 @@
 </head>
 <body>
 <main>
-	<h1 class="title">Результаты соревнований </h1>
-	<h3  class="subtitle">Дата и время соревнования</h3>
+	<h1 class="title">Results</h1>
+	<h3  class="subtitle">Datetime</h3>
 	<p>03.07.2021, 15:00-17:00</p>
 	<div class="table">
 		<dib class="table-row">
 			<div class="num table-cell">1</div>
-			<div class="name table-cell">Михаил Кочетков</div>
+			<div class="name table-cell">Mikhail Kochetkov</div>
 			<div class="chart table-cell">
 				<div class="chart-content">
 					<div class="chart-item half"></div>
@@ -39,7 +39,7 @@
 		</dib>
 		<dib class="table-row">
 			<div class="num table-cell">2</div>
-			<div class="name table-cell">Егор Дулуб</div>
+			<div class="name table-cell">Egor Dulub</div>
 			<div class="chart table-cell">
 				<div class="chart-content">
 					<div class="chart-item vin"></div>
@@ -61,6 +61,5 @@
 		</dib>
 	</div>
 </main>
-
 </body>
 </html>
