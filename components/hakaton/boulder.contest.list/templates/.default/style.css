@@ -67,6 +67,13 @@ main {
 
 .table-cell.date {
 	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+
+.table-cell.time {
+	font-size: 18px;
 	font-width: 400;
 	justify-content: space-around;
 	margin-bottom: 20px;
@@ -101,6 +108,18 @@ main {
 	color: #d41919;
 	background: transparent;
 }
+
+.btn-submit-application  {
+	color: #fff;
+	background: #fbc209;
+	border: 1px solid #fbc209;
+}
+
+.btn-submit-application:hover {
+	color: #fbc209;
+	background: transparent;
+}
+
 
 .btn-results {
 	color: #fff;

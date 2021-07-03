@@ -28,19 +28,25 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 		<dib class="table-row table-row-block">
 			<div class="name table-cell">Янтарные вершины</div>
 			<div class="flex table-cell date">
-				<div class="start">03.07.2021</div>
-				<div class="end">04.07.2021</div>
+				02.08.2021
+			</div>
+			<div class="flex table-cell time">
+				<div class="start">02.06.2021</div>
+				<div class="end">04.06.2021</div>
 			</div>
 			<div class=" table-cell opportunities">
-				<a href="#" class="btn btn-save btn-take-part">Принять участие</a>
+				<a href="#" class="btn btn-save btn-submit-application">Подать заявку</a>
 			</div>
 		</dib>
 
 		<dib class="table-row table-row-block">
 			<div class="name table-cell">Текущее  соревнование</div>
 			<div class="flex table-cell date">
-				<div class="start">02.06.2021</div>
-				<div class="end">04.06.2021</div>
+				03.06.2021
+			</div>
+			<div class="flex table-cell time">
+				<div class="start">08:00</div>
+				<div class="end">20:00</div>
 			</div>
 			<div class=" table-cell opportunities">
 				<a href="#" class="btn btn-save btn-take-part">Принять участие</a>
@@ -50,8 +56,11 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 		<dib class="table-row table-row-block">
 			<div class="name table-cell">Янтарные горы</div>
 			<div class="flex table-cell date">
-				<div class="start">03.03.2021</div>
-				<div class="end">04.03.2021</div>
+				03.02.2021
+			</div>
+			<div class="flex table-cell time">
+				<div class="start">08:00</div>
+				<div class="end">20:00</div>
 			</div>
 			<div class=" table-cell opportunities">
 				<a href="#" class="btn btn-results">Посмотреть результаты</a>
