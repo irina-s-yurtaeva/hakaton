@@ -35,14 +35,15 @@ $item = $arResult['ITEM'];
 		<input type="time" name="START" value="<?=htmlspecialcharsbx($item['START'])?>"> Ч
 		<input type="time" name="FINISH" value="<?=htmlspecialcharsbx($item['FINISH'])?>">
 	</div>
+
 	<h3  class="subtitle">—писок трасс</h3>
-	<ol>
+	<ul class="lists-track">
 		<?php
 		foreach ($arResult['TRACKS'] as $track)
 		{
 			?>
 			<li>
-				<input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
+				<span>3</span><input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
 			</li>
 			<?php
 		}
@@ -50,15 +51,15 @@ $item = $arResult['ITEM'];
 		{
 			?>
 			<li>
-				<input type="text" name="TRACK_NEW[]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
+				<span>2</span><input type="text" name="TRACK_NEW[]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
 			</li>
 			<?php
 		}
 		?>
 		<li>
-			<input type="text" name="TRACK_NEW[]" value="" placeholder="">
+			<span>1</span><input type="text" name="TRACK_NEW[]" value="" placeholder="">
 		</li>
-	</ol>
+	</ul>
 
 <!--	<p><input class="btn btn-add" type="button" name="" value="ADD" /></p>-->
 	<div class="attempt"><span>+ добавить еще</span></div>

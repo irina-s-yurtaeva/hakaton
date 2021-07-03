@@ -113,3 +113,28 @@ input {
 .attempt span {
 	border-bottom: 1px solid  #a0a0a0;
 }
+
+.lists-track li{
+	background: #fff;
+	margin-bottom: 20px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.lists-track input {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
+.lists-track span {
+	width: 40px;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border: 1px solid #a0a0a0;
+	border-right: 0;
+}
+
