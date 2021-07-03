@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9c3caa5-2d46-4638-b5f9-e2d5d5538752" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/all.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/all.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.card/templates/.default/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default" />
       <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.result/templates/.default" />
       <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.apply/templates/.default" />
       <recent name="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default" />
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625294606744</updated>
-      <workItem from="1625294611581" duration="19125000" />
+      <workItem from="1625294611581" duration="21470000" />
     </task>
     <servers />
   </component>

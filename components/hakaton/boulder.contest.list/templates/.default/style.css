@@ -46,86 +46,73 @@ main {
 	font-weight: bold;
 }
 
-.table {
-	margin-top: 25px;
-}
-
 .table-row {
 	display: flex;
-	border-top: 1px solid #444;
-	border-left: 1px solid #444;
+	border: 1px solid #444;
+	border-bottom: 1px solid transparent;
 	font-size: 14px;
+	padding: 20px 15px;
+	background: rgb(255 255 255 / 70%);
 }
 .table-row:last-of-type {
 	border-bottom: 1px solid #444;
 }
 
-.table-cell {
-	padding: 10px;
-	border-right: 1px solid #444;
-}
-
-.num.table-cell {
-	width: 35px;
-	padding: 10px 5px;
-	text-align: center;
-	flex-shrink: 0;
-}
-
 .name.table-cell {
-	width: 155px;
-	flex-shrink: 0;
-}
-
-.result.table-cell {
-	width: 60px;
-	padding: 10px 5px;
 	text-align: center;
-	flex-shrink: 0;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 20px;
 }
 
-.chart.table-cell {
-	width: 100%;
-	max-width: calc(100% - 35px - 155px - 60px);
-	padding: 10px 5px;
+.table-cell.date {
+	font-size: 18px;
+	font-width: 400;
+	justify-content: space-around;
+	margin-bottom: 20px;
 }
 
-.chart-content {
-	display: flex;
-	overflow: hidden;
-}
-
-
-.chart-item {
-	display: block;
-	background: #989393;
-	width: 5px;
-	height: 16px;
-	margin-right: 2px;
-	flex-shrink: 0;
-	position: relative;
-	overflow: hidden;
-}
-
-.chart-item::before {
-	content: '';
+.btn {
+	text-transform: uppercase;
+	border: 1px solid #a0a0a0;
 	display: block;
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	font-size: 16px;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	border-radius: 0;
+	/*margin-bottom: 20px;*/
+	transition: .4s;
+	text-align: center;
 }
 
-.chart-item.vin::before {
-	background: #980000;
+.btn-take-part {
+	color: #fff;
+	background: #d41919;
+	border: 1px solid #d41919;
 }
 
-.chart-item.half::before {
-	height: 50%;
-	background: #980000;
+.btn-take-part:hover {
+	color: #d41919;
+	background: transparent;
 }
 
+.btn-results {
+	color: #fff;
+	background: #af9e68;
+	border: 1px solid #af9e68;
+}
 
+.btn-results:hover {
+	color: #af9e68;
+	background: transparent;
+}
 
-
+.table-row-block {
+	flex-direction: column;
+}
