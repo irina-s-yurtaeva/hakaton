@@ -1,2 +1,3 @@
 <?php
-$MESS['BCE_CONTEST'] = 'Соревнование';
+$MESS['BCE_CONTEST'] = 'Contest';
+?>

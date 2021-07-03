@@ -41,7 +41,6 @@ final class BoulderContestEditComponent extends CBitrixComponent implements Main
 		{
 			$this->arResult['ITEM'] = $this->getItem();
 			$this->arResult['TRACKS'] = $this->getTracks();
-			$this->arResult['TRACKS_NEW'] = [];
 			if ($this->request->isPost() && $this->request->getPost('save'))
 			{
 				$result = new Main\Result();
@@ -66,7 +65,7 @@ final class BoulderContestEditComponent extends CBitrixComponent implements Main
 	{
 		if ($this->itemId > 0)
 		{
-			return Bitrix\Hakaton\Boulder\ContestTable::getById($this->itemId);
+			return Bitrix\Hakaton\Boulder\ContestTable::getById($this->itemId)->fetch();
 		}
 		return [];
 	}
@@ -75,11 +74,11 @@ final class BoulderContestEditComponent extends CBitrixComponent implements Main
 	{
 		if ($this->itemId > 0)
 		{
-			return Bitrix\Hakaton\Boulder\ContestTable::getList([
+			return Bitrix\Hakaton\Boulder\TrackTable::getList([
 				'select' => ['*'],
-				'filter' => ['CONTEST' => $this->itemId],
+				'filter' => ['CONTEST.ID' => $this->itemId],
 				'order' => ['NUMBER' => 'ASC', 'ID' => 'ASC']
-			]);
+			])->fetchAll();
 		}
 		return [];
 	}
@@ -118,6 +117,8 @@ final class BoulderContestEditComponent extends CBitrixComponent implements Main
 		}
 		if ($result->isSuccess() && $this->request->getPost('TRACK'))
 		{
+			?><pre><b>$this->request->getPost('TRACK'): </b><?print_r($this->request->getPost('TRACK'))?></pre><?
+
 			$result = $item->saveTracks($this->request->getPost('TRACK'));
 		}
 		if ($result->isSuccess() && $this->request->getPost('TRACK_NEW'))

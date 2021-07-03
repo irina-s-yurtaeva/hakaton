@@ -60,9 +60,9 @@ class Contest
 
 	public function saveTracks(array $tracks)
 	{
-		foreach ($tracks as $id => $track)
+		foreach ($tracks as $id => $trackName)
 		{
-			TrackTable::update($id, $track);
+			TrackTable::update($id, ['TITLE' => $trackName]);
 		}
 		return new Main\Result();
 	}

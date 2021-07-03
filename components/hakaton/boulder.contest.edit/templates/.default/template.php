@@ -2,19 +2,31 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /**
  * @var array $arResult
+ * @var \CMain $APPLICATION
  */
+use \Bitrix\Main\Localization\Loc;
+use \Bitrix\Main;
+
 $item = $arResult['ITEM'];
+if (empty($item))
+{
+	$item['START_DATE'] = new Main\Type\DateTime();
+	$item['FINISH_DATE'] = new Main\Type\DateTime();
+	$item['FINISH_DATE']->add('2H');
+}
+$start = new Main\Type\Date($item['START_DATE']);
+$startSet = $item['START_DATE']->format('H:i');
+$finishSet = $item['FINISH_DATE']->format('H:i');
 ?>
-
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html <?if (LANGUAGE_ID == "tr"):?>lang="<?=LANGUAGE_ID?>"<?endif?>>
 <head>
-<!--	<meta charset="UTF-8">-->
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Create or edit contest</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<?
+	$APPLICATION->ShowHead(false);
+	?>
+	<title><?=$APPLICATION->ShowTitle()?></title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -22,49 +34,37 @@ $item = $arResult['ITEM'];
 </head>
 <body>
 <main>
-
-<h1 class="title">Новое соревнование</h1>
+<h1 class="title"><?=Loc::getMessage('BCE_PLACEHOLDER')?></h1>
 <form method="post" action="<?=POST_FORM_ACTION_URI?>">
 	<?=bitrix_sessid_post()?>
 	<input type="hidden" name="ID" value="<?=htmlspecialcharsbx($item['ID'])?>">
-	<h2><input type="text" name="NAME" value="<?=htmlspecialcharsbx($item['NAME'])?>" placeholder="New contest"></h2>
-	<h3 class="subtitle">Дата соревнования</h3>
-	<div><input type="date" name="DATE" value="<?=htmlspecialcharsbx($item['DATE'])?>"></div>
-	<h3 class="subtitle">Время сета</h3>
+	<h2><input type="text" name="NAME" value="<?=htmlspecialcharsbx($item['TITLE'])?>" placeholder="<?=Loc::getMessage('BCE_PLACEHOLDER')?>"></h2>
+	<h3 class="subtitle"><?=Loc::getMessage('BCE_DATE')?></h3>
+	<div><input type="date" name="DATE" value="<?=$start->format('Y-m-d')?>"></div>
+	<h3 class="subtitle"><?=Loc::getMessage('BCE_TIME')?></h3>
 	<div class="flex block-time">
 		<input type="time" name="START" value="<?=htmlspecialcharsbx($item['START'])?>"> —
 		<input type="time" name="FINISH" value="<?=htmlspecialcharsbx($item['FINISH'])?>">
 	</div>
-
-	<h3  class="subtitle">Список трасс</h3>
+	<h3  class="subtitle">Tracks</h3>
 	<ul class="lists-track">
 		<?php
 		foreach ($arResult['TRACKS'] as $track)
 		{
 			?>
 			<li>
-				<span>3</span><input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
+				<span>3</span><input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['TITLE'])?>">
 			</li>
 			<?php
 		}
-		foreach ($arResult['TRACKS_NEW'] as $track)
-		{
-			?>
-			<li>
-				<span>2</span><input type="text" name="TRACK_NEW[]" value="<?=htmlspecialcharsbx($track['NAME'])?>">
-			</li>
-			<?php
-		}
+
 		?>
 		<li>
 			<span>1</span><input type="text" name="TRACK_NEW[]" value="" placeholder="">
 		</li>
-	</ul>
-
-<!--	<p><input class="btn btn-add" type="button" name="" value="ADD" /></p>-->
-	<div class="attempt"><span>+ добавить еще</span></div>
-
-	<p><input class="btn btn-save" type="submit" name="" value="Создать" /></p>
+	</ol>
+	<div class="attempt"><span>+ add track</span></div>
+	<p><input class="btn btn-save" type="submit" name="save" value="Save" /></p>
 </form>
 </main>
 </body>
