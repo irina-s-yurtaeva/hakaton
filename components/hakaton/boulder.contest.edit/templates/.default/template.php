@@ -43,26 +43,27 @@ $finishSet = $item['FINISH_DATE']->format('H:i');
 	<div><input type="date" name="DATE" value="<?=$start->format('Y-m-d')?>"></div>
 	<h3 class="subtitle"><?=Loc::getMessage('BCE_TIME')?></h3>
 	<div class="flex block-time">
-		<input type="time" name="START" value="<?=htmlspecialcharsbx($item['START'])?>"> —
-		<input type="time" name="FINISH" value="<?=htmlspecialcharsbx($item['FINISH'])?>">
+		<input type="time" name="START" value="<?=$startSet?>"> —
+		<input type="time" name="FINISH" value="<?=$finishSet?>">
 	</div>
 	<h3  class="subtitle">Tracks</h3>
 	<ul class="lists-track">
 		<?php
+		$i = 1;
 		foreach ($arResult['TRACKS'] as $track)
 		{
 			?>
 			<li>
-				<span>3</span><input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['TITLE'])?>">
+				<span><?=($i++)?></span><input type="text" name="TRACK[<?=$track['ID']?>]" value="<?=htmlspecialcharsbx($track['TITLE'])?>">
 			</li>
 			<?php
 		}
 
 		?>
 		<li>
-			<span>1</span><input type="text" name="TRACK_NEW[]" value="" placeholder="">
+			<span><?=($i++)?></span><input type="text" name="TRACK_NEW[]" value="" placeholder="">
 		</li>
-	</ol>
+	</ul>
 	<div class="attempt"><span>+ add track</span></div>
 	<p><input class="btn btn-save" type="submit" name="save" value="Save" /></p>
 </form>

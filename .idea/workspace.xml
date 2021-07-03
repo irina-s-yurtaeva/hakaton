@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9c3caa5-2d46-4638-b5f9-e2d5d5538752" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/lang/ru/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/lang/ru/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.edit/templates/.default/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/hakaton/lib/boulder/contest.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/hakaton/lib/boulder/contest.php" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/hakaton/boulder.contest.list/templates/.default/template.php" afterDir="false" />
->>>>>>> 990fe9f (Список соревнований, кнопка для будущих соревнований и время соревнований)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +44,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
@@ -73,11 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625294606744</updated>
-<<<<<<< HEAD
       <workItem from="1625294611581" duration="15344000" />
-=======
-      <workItem from="1625294611581" duration="23633000" />
->>>>>>> 990fe9f (Список соревнований, кнопка для будущих соревнований и время соревнований)
     </task>
     <servers />
   </component>
