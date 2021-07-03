@@ -19,7 +19,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 </head>
 <!--<body class="girls ">-->
 <body class="boys ">
-<main>
+<main class="competitions">
 	<h1 class="title">Соревнования <span>03.09.2021</span></h1>
 
 	<div class="select-block">
@@ -82,6 +82,17 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 
 </main>
+
+<!--блок когда соревнования окончены-->
+
+
+<!--<main class="competitions-end">-->
+<!--	<div class="competitions-end--container">-->
+<!--		<h1 class="title">Соревнования <span>03.09.2021</span></h1>-->
+<!---->
+<!--		<p><input class="btn btn-save" type="submit" name="" value="Результаты" /></p>-->
+<!--	</div>-->
+<!--</main>-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

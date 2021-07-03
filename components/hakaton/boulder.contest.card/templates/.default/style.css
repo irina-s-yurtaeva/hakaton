@@ -168,3 +168,67 @@ body.girls .arrow {
 .attempt span {
 	border-bottom: 1px solid  #a0a0a0;
 }
+
+
+.competitions-end {
+	min-height: calc(100vh - 30px);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.btn {
+	text-transform: uppercase;
+	border: 1px solid #a0a0a0;
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	border-radius: 0;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+
+.btn.btn-save {
+	color: #fff;
+	background: #444;
+	margin-top: 40px;
+}
+
+body.boys .btn.btn-save {
+	background-color: #2fa8e4;
+	border-color: #2fa8e4;
+}
+
+body.girls .btn.btn-save {
+	background-color: #f06699;
+	border-color: #f06699;
+}
+
+.btn.btn-save:hover {
+	color: #444;
+	background: #fff;
+}
+
+body.boys .btn.btn-save:hover  {
+	background-color: transparent;
+	color: #2fa8e4;
+}
+
+body.girls .btn.btn-save:hover  {
+	background-color: transparent;
+	color: #f06699;
+}
+
+
+
+
+
